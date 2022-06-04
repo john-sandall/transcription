@@ -1,0 +1,15 @@
+<html>
+  <head></head>
+  <body>
+    <p></p>
+    <script>
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+          console.log(stream)
+        })
+        .catch(function(error) {
+          console.log(error)
+        })
+    </script>
+  </body>
+</html>
